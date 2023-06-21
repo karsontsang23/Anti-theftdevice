@@ -1,5 +1,6 @@
 {
     "name": "防盜器",
+    "version": "1.0.0",
     "description": "",
     "dependencies": {
         "core": "*",
