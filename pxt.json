@@ -7,7 +7,8 @@
         "radio": "*",
         "microphone": "*",
         "sugar": "github:kittenbot/pxt-sugar#v0.2.5",
-        "robotbit": "github:kittenbot/pxt-robotbit#v0.4.5"
+        "robotbit": "github:kittenbot/pxt-robotbit#v0.4.5",
+        "防盜器": "github:karsontsang23/anti-theftdevice#v4.0.0"
     },
     "files": [
         "main.blocks",

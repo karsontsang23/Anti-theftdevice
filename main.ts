@@ -14,7 +14,6 @@ Sugar.onButtonEvent(DigitalPin.P2, function () {
     Sugar.ledOnoff(DigitalPin.P4, Sugar.LEDSta.On)
 })
 basic.forever(function () {
-    basic.showNumber(Sugar.Angle(AnalogPin.P1))
     if (Sugar.Button(DigitalPin.P0)) {
         if (_ == 9) {
             SugarBox.servo2kg(SugarBox.SPort.S1, 90)
