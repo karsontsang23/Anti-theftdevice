@@ -1,5 +1,5 @@
 Sugar.onButtonEvent(DigitalPin.P0, function () {
-    if (_2 == _) {
+    if (_3 == _2) {
         SugarBox.servo2kg(SugarBox.SPort.S1, 90)
         Sugar.ledOnoff(DigitalPin.P3, Sugar.LEDSta.On)
         Sugar.ledOnoff(DigitalPin.P4, Sugar.LEDSta.Off)
@@ -12,14 +12,14 @@ Sugar.onButtonEvent(DigitalPin.P0, function () {
     }
 })
 Sugar.onButtonEvent(DigitalPin.P2, function () {
-    _2 += 1
+    _3 += 1
 })
+let _3 = 0
 let _2 = 0
-let _ = 0
-_ = 9
+_2 = 9
 basic.forever(function () {
     if (Sugar.Button(DigitalPin.P0)) {
-        if (_2 == _) {
+        if (_3 == _2) {
             SugarBox.servo2kg(SugarBox.SPort.S1, 90)
             Sugar.ledOnoff(DigitalPin.P3, Sugar.LEDSta.On)
             Sugar.ledOnoff(DigitalPin.P4, Sugar.LEDSta.Off)
@@ -33,10 +33,10 @@ basic.forever(function () {
     }
 })
 basic.forever(function () {
-    basic.showNumber(_2)
+    basic.showNumber(_3)
 })
 basic.forever(function () {
     if (Sugar.Button(DigitalPin.P2)) {
-        _2 += 1
+        _3 += 1
     }
 })
