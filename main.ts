@@ -19,6 +19,9 @@ let AaBb = 0
 let Password = 0
 Password = 9
 basic.forever(function () {
+    basic.showNumber(AaBb)
+})
+basic.forever(function () {
     if (Sugar.Button(DigitalPin.P2)) {
         AaBb += 1
     }
@@ -38,7 +41,4 @@ basic.forever(function () {
             Sugar.ledOnoff(DigitalPin.P4, Sugar.LEDSta.On)
         }
     }
-})
-basic.forever(function () {
-    basic.showNumber(AaBb)
 })
