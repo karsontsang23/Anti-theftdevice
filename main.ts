@@ -22,6 +22,7 @@ basic.forever(function () {
             music.play(music.stringPlayable("A B C5 B A B C5 B ", 200), music.PlaybackMode.InBackground)
         } else {
             Sugar.ledOnoff(DigitalPin.P4, Sugar.LEDSta.On)
+            music.play(music.stringPlayable("F F F F F F F F ", 500), music.PlaybackMode.InBackground)
         }
     }
 })
